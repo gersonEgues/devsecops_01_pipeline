@@ -29,9 +29,9 @@ docker volume create jenkins-home
 docker volume ls 
 ```
 
-2. verificar el volumen creado: 
-2. Crear una carpeta local (ej: `jenkins-docker`)
-3. Dentro, crear un archivo `docker-compose.yml` con el siguiente contenido:
+3. verificar el volumen creado: 
+4. Crear una carpeta local (ej: `jenkins-docker`)
+5. Dentro, crear un archivo `docker-compose.yml` con el siguiente contenido:
 
 ```yaml
 docker-compose.yml:
