@@ -17,8 +17,21 @@ Automatizar el proceso de integración continua (CI) usando Jenkins, Docker y un
 
 ### 🚀 Paso 1: Levantar Jenkins con Docker
 
-1. Crear una carpeta local (ej: `jenkins-docker`)
-2. Dentro, crear un archivo `docker-compose.yml` con el siguiente contenido:
+1. Crear el volumen de manera manual(ya que en la configuracion de docker compose, le decimos que use un volumen externo `external: true` )
+
+```yaml
+docker volume create jenkins-home
+```
+
+2. Verificar volumen creado
+
+```yaml
+docker volume ls 
+```
+
+2. verificar el volumen creado: 
+2. Crear una carpeta local (ej: `jenkins-docker`)
+3. Dentro, crear un archivo `docker-compose.yml` con el siguiente contenido:
 
 ```yaml
 docker-compose.yml:
