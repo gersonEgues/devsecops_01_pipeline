@@ -132,6 +132,13 @@ npm test
 
 - Validar salida del test: `Test ejecutado correctamente`
 
+- Ingresar al contenedor jenkins: `docker exec -it jenkins bash`
+
+- Ingresar a la ruta: `/var/jenkins_home/workspace/node-ci-job`, ver los archivos copiados
+
+- Esta cnfigurado de tal manera que revisa el repositorio cada minuto si hay cambios, si es asi, copia el contendido de el repositorio al contenedor de jenkins
+
+- para este ejemplo no se uso tnkens porque el respositorio es publico
 ---
 
 ### ⚠️ Errores comunes
