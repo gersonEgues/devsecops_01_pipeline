@@ -17,10 +17,10 @@ Automatizar el proceso de integración continua (CI) usando Jenkins, Docker y un
 
 ### 🚀 Paso 1: Levantar Jenkins con Docker
 
-1. Crear el volumen de manera manual(ya que en la configuracion de docker compose, le decimos que use un volumen externo `external: true` )
+1. Crear el volumen de manera manual (ya que en la configuracion de docker compose, le decimos que use un volumen externo `external: true` )
 
 ```yaml
-docker volume create jenkins-home
+docker volume create jenkins_home
 ```
 
 2. Verificar volumen creado
@@ -67,7 +67,7 @@ docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 6. Completar instalación recomendada y crear tu usuario.
-
+7. Seleccionar la opción `Select plugins to install`e instalar los plugions necesarios como: `Docker, NOde, Git, Github, Gitlab`
 ---
 
 ### 🔧 Paso 2: Instalar plugins necesarios
